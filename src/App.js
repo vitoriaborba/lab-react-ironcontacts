@@ -26,10 +26,12 @@ function App() {
   return (
     <div className="App"> 
 
-     <h1> IronContacts </h1>
+     <h1> IronContacts </h1> 
+     <div className='buttons'>
      <button onClick={addContact}> Add Random Contact</button>
      <button onClick={sortPopularity}> Sort by Popularity</button>
      <button onClick={sortName}> Sort by Name</button>
+     </div>
       <table>
         <thead>
           <tr>
@@ -51,7 +53,7 @@ function App() {
           <td>{(contact.popularity).toFixed(2)}</td>
           <td>{contact.wonOscar?'🏆':' '}</td>
           <td>{contact.wonEmmy?'🏆':' '}</td>
-          <td><button onClick={() => deleteMovie(contact.id)}>Delete</button></td>
+          <td><button className='delete' onClick={() => deleteMovie(contact.id)}>Delete</button></td>
         </tr>
         )
         })}

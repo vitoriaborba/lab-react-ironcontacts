@@ -1,4 +1,54 @@
+body {
+  background-color: rgb(66, 138, 127);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+  text-transform: uppercase;
+
+}
+.delete {
+  background-color:rgb(112, 54, 119) ;
+  border-color: rgb(110, 57, 117);
+}
+.delete:hover{
+  background-color: rgb(112, 40, 40);
+  border-color: rgb(90, 43, 43);
+}
+
 tr img {
   width: 100px;
   height: auto;
+}
+.App {
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+
+}
+table {
+  margin-left:auto; 
+  margin-right:auto;
+}
+button {
+  margin: 20px;
+  background-color:rgb(139, 130, 73);
+  border-color: rgb(182, 172, 110);;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover {
+  background-color: rgb(107, 131, 58);
+  border-color:rgb(86, 99, 60); ;
+}
+table, th, td {
+  border: 1px solid rgb(116, 216, 194);
+  font-weight: 700;
+}
+th {
+  width: 100px;
 }
